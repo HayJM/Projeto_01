@@ -67,7 +67,7 @@ begin
   lblCadastro := TLabel.Create(srlDadosProduto);
   lblCadastro.Parent := srlDadosProduto;
   lblCadastro.Top := linhaAtual;
-  lblCadastro.Left := 8;
+  lblCadastro.Left := 16;
   lblCadastro.Caption := Format(
   'Código: %s' + LineEnding +
   'Produto: %s |'+ 'Marca: %s ' + LineEnding +
@@ -102,7 +102,7 @@ var
 begin
   Vcompra:= StrToFloat(edtVcompra.Text);
   Pajuste:= StrToFloat(edtVcompra.Text)/100;
-  Vvenda:= Vcompra * Pajuste;
+  Vvenda:= Vcompra + (Vcompra * Pajuste);
 
   lblVvenda.Caption:= ('Valor de Venda: ' + FloatToStr(Vvenda));
 

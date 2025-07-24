@@ -66,22 +66,13 @@ object frmproduto: Tfrmproduto
     Width = 136
     Caption = 'Descrição do Produto:'
   end
-  object srlDadosProduto: TListBox
-    Left = 16
-    Height = 148
-    Top = 303
-    Width = 840
-    ItemHeight = 0
-    TabOrder = 4
-    TopIndex = -1
-  end
   object btnCadastrar: TButton
     Left = 260
     Height = 25
     Top = 256
     Width = 249
     Caption = 'Cadastrar'
-    TabOrder = 5
+    TabOrder = 4
     OnClick = btnCadastrarClick
   end
   object edtVCompra: TEdit
@@ -89,14 +80,14 @@ object frmproduto: Tfrmproduto
     Height = 31
     Top = 167
     Width = 94
-    TabOrder = 6
+    TabOrder = 5
   end
   object edtAjuste: TEdit
     Left = 176
     Height = 31
     Top = 167
     Width = 107
-    TabOrder = 7
+    TabOrder = 6
     OnExit = edtAjusteExit
   end
   object lblValorCompra: TLabel
@@ -119,5 +110,14 @@ object frmproduto: Tfrmproduto
     Top = 213
     Width = 103
     Caption = 'Valor de Venda:  '
+  end
+  object srlDadosProduto: TScrollBox
+    Left = 16
+    Height = 150
+    Top = 296
+    Width = 840
+    HorzScrollBar.Page = 1
+    VertScrollBar.Page = 1
+    TabOrder = 7
   end
 end

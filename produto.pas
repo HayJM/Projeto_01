@@ -25,8 +25,8 @@ type
     lblNomeProd: TLabel;
     lblMarca: TLabel;
     lblCodigoProd: TLabel;
-    srlDadosProduto: TListBox;
     memDescricao: TMemo;
+    srlDadosProduto: TScrollBox;
     procedure btnCadastrarClick(Sender: TObject);
     procedure edtAjusteExit(Sender: TObject);
   private
