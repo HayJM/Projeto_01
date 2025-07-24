@@ -1,0 +1,7 @@
+object frmVendas: TfrmVendas
+  Left = 249
+  Height = 316
+  Top = 31
+  Width = 772
+  Caption = 'Vendas'
+end

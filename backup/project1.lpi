@@ -47,6 +47,18 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
       </Unit>
+      <Unit>
+        <Filename Value="vendas.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmVendas"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit>
+      <Unit>
+        <Filename Value="produto.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmproduto"/>
+        <ResourceBaseClass Value="Form"/>
+      </Unit>
     </Units>
   </ProjectOptions>
   <CompilerOptions>

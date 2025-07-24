@@ -107,7 +107,7 @@ begin
   [nome, genero, cpf, telefone, cep]);
   lblCadastro.WordWrap := True;
   lblCadastro.AutoSize := False;
-  lblCadastro.Width := slrdados.Width - 16;
+  lblCadastro.Width := srldados.Width - 16;
 
 
   // Atualiza a posição para o próximo cadastro
