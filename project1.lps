@@ -32,15 +32,12 @@
         <ComponentName Value="frmpesquisa"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <EditorIndex Value="1"/>
-        <TopLine Value="40"/>
-        <CursorPos Y="37"/>
+        <EditorIndex Value="-1"/>
+        <CursorPos Y="2"/>
         <UsageCount Value="23"/>
-        <Loaded Value="True"/>
-        <LoadedDesigner Value="True"/>
       </Unit>
     </Units>
-    <JumpHistory HistoryIndex="29">
+    <JumpHistory HistoryIndex="24">
       <Position>
         <Filename Value="principal.pas"/>
         <Caret Line="76" TopLine="60"/>
@@ -78,15 +75,8 @@
         <Caret Line="32" Column="5" TopLine="23"/>
       </Position>
       <Position>
-        <Filename Value="pesquisa.pas"/>
-      </Position>
-      <Position>
         <Filename Value="principal.pas"/>
         <Caret Line="99" Column="3" TopLine="89"/>
-      </Position>
-      <Position>
-        <Filename Value="pesquisa.pas"/>
-        <Caret Line="37" Column="3" TopLine="25"/>
       </Position>
       <Position>
         <Filename Value="principal.pas"/>
@@ -95,10 +85,6 @@
       <Position>
         <Filename Value="principal.pas"/>
         <Caret Line="60" Column="61" TopLine="60"/>
-      </Position>
-      <Position>
-        <Filename Value="pesquisa.pas"/>
-        <Caret Line="8" Column="76"/>
       </Position>
       <Position>
         <Filename Value="principal.pas"/>
@@ -144,16 +130,8 @@
         <Caret Line="179" TopLine="163"/>
       </Position>
       <Position>
-        <Filename Value="pesquisa.pas"/>
-        <Caret Line="8" Column="76" TopLine="8"/>
-      </Position>
-      <Position>
         <Filename Value="principal.pas"/>
         <Caret Line="116" TopLine="81"/>
-      </Position>
-      <Position>
-        <Filename Value="principal.pas"/>
-        <Caret Line="45" TopLine="50"/>
       </Position>
       <Position>
         <Filename Value="principal.pas"/>
