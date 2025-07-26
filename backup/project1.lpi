@@ -51,12 +51,14 @@
         <Filename Value="vendas.pas"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="frmVendas"/>
+        <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
       </Unit>
       <Unit>
         <Filename Value="produto.pas"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="frmproduto"/>
+        <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
       </Unit>
     </Units>

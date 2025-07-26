@@ -1,4 +1,8 @@
+//teste te comite github 
+// como assim não era pra ta assim
+// agora temos uma comucação via terminal
 unit pesquisa;
+
 
 {$mode ObjFPC}{$H+}
 
@@ -34,44 +38,51 @@ uses
 
 { Tfrmpesquisa }
 
+
 procedure Tfrmpesquisa.btnpesquisaClick(Sender: TObject);
 var
   i: Integer;
-  cpfBusca: string;
+  cpfBuscado: string;
+  controle: TControl;
+  lbl: TLabel;
   achou: Boolean;
   lblResultado: TLabel;
 begin
-  cpfBusca := Trim(edtcpf.Text);
-  achou := False;
-
-  // Limpa resultados anteriores da ScrollBox
+  // Limpa resultados anteriores
   while srlpesquisa.ControlCount > 0 do
     srlpesquisa.Controls[0].Free;
 
-  for i := 0 to High(frmprincipal.ListaClientes) do
-  begin
-    if frmprincipal.ListaClientes[i].CPF = cpfBusca then
-    begin
-      achou := True;
+  cpfBuscado := Trim(edtcpf.Text);
+  achou := False;
 
-      lblResultado := TLabel.Create(srlpesquisa);
-      lblResultado.Parent := srlpesquisa;
-      lblResultado.Top := 8;
-      lblResultado.Left := 8;
-      lblResultado.Caption :=
-        'Nome: ' + frmprincipal.ListaClientes[i].Nome + LineEnding +
-        'Gênero: ' + frmprincipal.ListaClientes[i].Genero + LineEnding +
-        'Telefone: ' + frmprincipal.ListaClientes[i].Telefone + LineEnding +
-        'CEP: ' + frmprincipal.ListaClientes[i].CEP;
-      lblResultado.WordWrap := True;
-      lblResultado.AutoSize := True;
-      Exit;
+  // Procura nos Labels do srldados
+  for i := 0 to frmprincipal.srldados.ControlCount - 1 do
+  begin
+    controle := frmprincipal.srldados.Controls[i];
+    if (controle is TLabel) then
+    begin
+      lbl := TLabel(controle);
+      if Pos(cpfBuscado, lbl.Caption) > 0 then
+      begin
+        // Mostra o label encontrado em srlpesquisa 
+        
+        lblResultado := TLabel.Create(srlpesquisa);
+        lblResultado.Parent := srlpesquisa;
+        lblResultado.Top := 8;
+        lblResultado.Left := 8;
+        lblResultado.Caption := lbl.Caption;
+        lblResultado.WordWrap := True;
+        lblResultado.AutoSize := True;
+        achou := True;
+        Break;
+      end;
     end;
   end;
 
   if not achou then
     ShowMessage('CPF não encontrado.');
 end;
+
 
 end.
 

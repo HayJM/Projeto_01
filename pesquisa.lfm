@@ -32,7 +32,7 @@ object frmpesquisa: Tfrmpesquisa
   object btnpesquisa: TButton
     Left = 400
     Height = 35
-    Top = 63
+    Top = 64
     Width = 150
     Caption = 'Pesquisa'
     TabOrder = 1

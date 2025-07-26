@@ -35,6 +35,7 @@ type
     procedure FormShow(Sender: TObject);
     procedure mniProdutoClick(Sender: TObject);
     procedure mniPsequisaClick(Sender: TObject);
+    procedure mniVendaClick(Sender: TObject);
     procedure mnmprincipalChange(Sender: TObject; Source: TMenuItem;
       Rebuild: Boolean);
     procedure mnmprincipalDrawItem(Sender: TObject; ACanvas: TCanvas;
@@ -52,7 +53,7 @@ var
 
 implementation
   uses
-    pesquisa, produto;
+    pesquisa, produto, vendas;
 
 {$R *.lfm}
 
@@ -146,6 +147,11 @@ end;
 procedure Tfrmprincipal.mniPsequisaClick(Sender: TObject);
 begin
   frmpesquisa.Show;
+end;
+
+procedure Tfrmprincipal.mniVendaClick(Sender: TObject);
+begin
+  frmVendas.Show;
 end;
 
 procedure Tfrmprincipal.mnmprincipalChange(Sender: TObject; Source: TMenuItem;

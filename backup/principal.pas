@@ -23,6 +23,7 @@ type
     lblcpf: TLabel;
     edtcep: TMaskEdit;
     MainMenu1: TMainMenu;
+    mniProduto: TMenuItem;
     mniPsequisa: TMenuItem;
     mniVenda: TMenuItem;
     qrggenero: TRadioGroup;
@@ -32,7 +33,9 @@ type
     procedure edtcepExit(Sender: TObject);
     procedure edtfoneExit(Sender: TObject);
     procedure FormShow(Sender: TObject);
+    procedure mniProdutoClick(Sender: TObject);
     procedure mniPsequisaClick(Sender: TObject);
+    procedure mniVendaClick(Sender: TObject);
     procedure mnmprincipalChange(Sender: TObject; Source: TMenuItem;
       Rebuild: Boolean);
     procedure mnmprincipalDrawItem(Sender: TObject; ACanvas: TCanvas;
@@ -49,7 +52,9 @@ var
   frmprincipal: Tfrmprincipal;
 
 implementation
-  uses  pesquisa;
+  uses
+    pesquisa, produto, vendas;
+
 {$R *.lfm}
 
 { Tfrmprincipal }
@@ -134,9 +139,19 @@ begin
 
 end;
 
+procedure Tfrmprincipal.mniProdutoClick(Sender: TObject);
+begin
+  frmproduto.Show;
+end;
+
 procedure Tfrmprincipal.mniPsequisaClick(Sender: TObject);
 begin
   frmpesquisa.Show;
+end;
+
+procedure Tfrmprincipal.mniVendaClick(Sender: TObject);
+begin
+  frmVenda.Show;
 end;
 
 procedure Tfrmprincipal.mnmprincipalChange(Sender: TObject; Source: TMenuItem;
